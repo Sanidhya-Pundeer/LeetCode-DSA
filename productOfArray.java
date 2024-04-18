@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class productOfArray {
     public static void main(String[] args) {
-        float arr[] = new float[] { 1, 2, 3, 4 };
+        float arr[] = new float[] {};
         int n = arr.length;
         float result[] = new float[n];
         float temp = 1;
