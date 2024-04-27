@@ -14,9 +14,7 @@ class arraytoInt {
             for (int j = 0; j < arr.length - 1; j++) {
                 ans = (int) (temp * Math.pow(10, ten));
             }
-
         }
         System.out.println(ans);
-
     }
 }
