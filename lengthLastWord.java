@@ -16,3 +16,7 @@ public class lengthLastWord {
         sc.close();
     }
 }
+// testing
+// riya code
+// hemloooo
+// asjbgfasibgiueabsignewiongiowe
