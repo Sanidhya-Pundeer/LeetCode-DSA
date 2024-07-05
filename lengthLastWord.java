@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class lengthLastWord {
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String s = sc.nextLine();
@@ -16,7 +17,3 @@ public class lengthLastWord {
         sc.close();
     }
 }
-// testing
-// riya code
-// hemloooo
-// asjbgfasibgiueabsignewiongiowe
