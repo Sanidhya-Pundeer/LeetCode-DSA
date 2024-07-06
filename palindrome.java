@@ -3,7 +3,7 @@ public class palindrome {
         int a = 121;
         int temp = a;
         int tem = a;
-        int ans = 0;
+        long ans = 0;
         int size = 0;
         while (tem > 0) {
             tem = tem / 10;
