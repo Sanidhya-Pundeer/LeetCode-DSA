@@ -1,25 +1,37 @@
 public class palindrome {
     public static void main(String[] args) {
-        int a = 121;
-        int temp = a;
-        int tem = a;
-        long ans = 0;
-        int size = 0;
-        while (tem > 0) {
-            tem = tem / 10;
-            size++;
-        }
-        while (temp > 0) {
-            int r = temp % 10;
-            temp = temp / 10;
-            ans += r * Math.pow(10, size - 1);
-            size--;
+        String s = "0P";
+        // String trimmed = s.replace(" ", "").replace(",", "").replace(".",
+        // "").replace(":", "").toLowerCase();
+        String trimmed = s.replace(" ", "").replaceAll("[^a-zA-Z0-9]", "").toLowerCase();
+        int start = 0;
+        int end = trimmed.length() - 1;
+        System.out.println(trimmed);
 
-        }
-        if (ans == a) {
-            System.out.println("Yes");
+        char[] arr = trimmed.toCharArray();
+
+        if (arr.length == 0) {
+            System.out.println("palindrome");
         } else {
-            System.out.println("no");
+            boolean flag = true;
+            while (start < end) {
+                if (arr[start] == arr[end]) {
+                    flag = true;
+
+                } else {
+                    flag = false;
+                    break;
+                }
+                start++;
+                end--;
+            }
+
+            if (flag == true) {
+                System.out.println("palindrome");
+            } else {
+                System.out.println("not a palindrome");
+            }
+
         }
 
     }
