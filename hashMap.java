@@ -11,6 +11,7 @@ public class hashMap {
         // insertion
         map.put("india", "high");
         map.put("us", "low");
+        map.put("us", "low");
 
         // print
         System.out.println(map);
@@ -59,10 +60,12 @@ public class hashMap {
         }
 
         // removing from hashmap
-        map.remove("us");
+        // map.remove("us");
         System.out.println(map);
 
         // get size of map
         System.out.println(map.size());
+
+        System.out.println("No if key in map: " + map.get("us"));
     }
 }
